@@ -17,6 +17,10 @@
   letter-spacing: 0.03em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-blue-color);
+  }
 }
 
 .footer-contacts {
@@ -26,13 +30,10 @@
   letter-spacing: 0.03em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-address:hover,
-.footer-address:focus,
-.footer-contacts:hover,
-.footer-contacts:focus {
-  color: var(--accent-blue-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-blue-color);
+  }
 }
 
 .footer-list:not(:last-child) {
@@ -66,10 +67,9 @@
   /* background-color: rgba(255, 255, 255, 0.1); */
   border-radius: 50%;
   justify-content: center;
-}
-
-.footer-social-item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-social-link {
@@ -83,11 +83,10 @@
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-blue-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-blue-color);
+  }
 }
 
 /*блок для подпишись  на телеграм и для модалки*/
@@ -179,10 +178,9 @@
   color: var(--primary-white-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  fill: currentColor;
-  background-color: var(--accent-blue-color);
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    background-color: var(--accent-blue-color);
+  }
 }

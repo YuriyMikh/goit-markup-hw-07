@@ -22,17 +22,20 @@
   display: flex;
 }
 
-.features-section-item::before {
-  content: '';
-  display: block;
-  /* width: 270px; */
-  height: 120px;
-  background-color: #f5f4fa;
+.features-section-item {
+  width: 270px;
+  &::before {
+    content: '';
+    display: block;
+    /* width: 270px; */
+    height: 120px;
+    background-color: #f5f4fa;
 
-  background-size: content;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
+    background-size: content;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
 }
 
 .icon-antenna::before {
@@ -48,10 +51,6 @@
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
-
-.features-section-item {
-  width: 270px;
 }
 
 .features-section-item:not(:last-child) {
@@ -82,12 +81,11 @@
   justify-content: space-between;
 }
 
-.doing-items:not(:last-child) {
-  margin-right: 30px;
-}
-
 .doing-items {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .doing-items-text {
@@ -146,10 +144,9 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-team-img {
@@ -170,6 +167,9 @@
 .team-social-item {
   width: 44px;
   height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .team-social-link {
@@ -183,16 +183,11 @@
   color: var(--primary-white-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-  background: var(--accent-blue-color);
-  fill: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    background: var(--accent-blue-color);
+    fill: var(--primary-white-color);
+  }
 }
 
 .clients-title {
@@ -227,10 +222,9 @@
   color: var(--accent-blue-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  fill: var(--accent-blue-color);
-  border-color: var(--accent-blue-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-blue-color);
+    border-color: var(--accent-blue-color);
+  }
 }

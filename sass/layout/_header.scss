@@ -27,20 +27,18 @@
   content: '';
   margin-right: 10px;
   fill: currentColor;
-}
-
-.icon-email:hover {
-  fill: var(--accent-blue-color);
+  &:hover {
+    fill: var(--accent-blue-color);
+  }
 }
 
 .icon-tel {
   content: '';
   margin-right: 10px;
   fill: currentColor;
-}
-
-.icon-tel:hover {
-  fill: var(--accent-blue-color);
+  &:hover {
+    fill: var(--accent-blue-color);
+  }
 }
 
 /*Даем отступ для соседа слева. Для первого li отступа не будет, так как первый li не имеет соседа слева*/
@@ -60,12 +58,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
-  color: var(--accent-blue-color);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-blue-color);
+  }
 }
 
 .nav-contacts {
@@ -76,12 +73,11 @@
   letter-spacing: 0.02em;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-contacts:hover,
-.nav-contacts:active,
-.nav-contacts:focus {
-  color: var(--accent-blue-color);
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--accent-blue-color);
+  }
 }
 
 .nav-link.current {
